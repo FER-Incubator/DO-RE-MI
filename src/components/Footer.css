@@ -1,0 +1,8 @@
+footer{
+    /*background-color: rgb(28, 215, 18);*/
+    background-image: url("../images/headerback.jpg");
+    display: flex;
+    justify-content: space-between;
+    padding:40px 10px;
+    margin-top: 50px;
+}

@@ -1,0 +1,65 @@
+h1{
+    margin: 0;
+}
+.naslov-tekst{
+    font-family: "Comic Sans MS" ; 
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    text-shadow: rgba(217, 214, 214, 0.93) 2px 3px 5px;
+}
+
+.naslov img{
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.naslov{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 5%;
+}
+
+header{
+    background-image: url("../images/headerback.jpg");
+    /*background-color: rgb(241, 122, 25);*/
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.poveznica{
+    color: black;
+    padding: 5px;
+    font-family: "Comic Sans MS" ;
+    border: none;
+}
+
+.poveznica:hover{
+    /*border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 0 rgb(166, 208, 242), 0 5px 10px rgb(166, 208, 242);*/
+    border-bottom: solid rgb(95, 221, 240);
+}
+
+.poveznica-active{
+    color: black;
+    padding: 5px;
+    font-family: "Comic Sans MS" ;
+    border: none;
+    border-bottom: solid rgb(95, 221, 240);
+}
