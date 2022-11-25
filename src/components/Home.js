@@ -5,6 +5,9 @@ import RE from '../images/RE.png';
 import MI from '../images/MI.png';
 import logo from '../images/logorobot.png';
 import logo2 from '../images/logorobot2.png';
+import audioDO from '../audio/do.mp3';
+import audioRE from '../audio/re.mp3';
+import audioMI from '../audio/mi.mp3';
 import './Home.css';
 
 
@@ -14,31 +17,31 @@ function Home(){
     const [robotre,setRobotRE] = useState('');
     const [robotmi,setRobotMI] = useState('');
 
+   new Audio(audioDO);
+
     function handleChange(e){
         setIme(e.target.value);
-    }
-
-    function getIme(ime){
-        console.log(ime);
-        return ime;
     }
     
     function handleRobotDO(){
         let ucenikIme = ime;
         setRobotDO('Bok ' + ime + ', ja se zovem DO. Plave sam boje i svi me vole. Volim istraživati i veselim se našoj zajedničkoj pustolovini!');
+        new Audio(audioDO).play();
     }
     function handleRobotRE(){
         setRobotRE('Bok ' + ime + ', ja se zovem RE. Sva se crvenim jer postavljam previše pitanja. Pripremi se za moja zagonetna pitanja!');
+        new Audio(audioRE).play();
     }
     function handleRobotMI(){
         setRobotMI('Bok ' + ime + ', ja se zovem MI. Narančasta sam kao mrkva. Obožavam igru i zabavu. Jedva čekam da se igramo zajedno!');
+        new Audio(audioMI).play();
     }
 
 
     return(
     <div className='pozadina'>
         <div className='uvod stil-tekst'>
-            <h2 className='istakni'>Dobrodošao u prvu online glazbenu učionicu!</h2>
+            <h2 className='istakni'>Dobrodošli u prvu online glazbenu učionicu!</h2>
             <text>Provest ćemo te kroz nezaboravnu pustolovinu upoznavanja svijeta glazbe.</text>
             <text>Upoznat ćeš kako glazba nastaje, tko ju stvara i koje instrumente koristi.</text>
             <h3>Upoznaj naše vesele glazbene robote koji će te voditi kroz pustolovinu.</h3>
