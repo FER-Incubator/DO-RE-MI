@@ -9,6 +9,7 @@ import audioDO from '../audio/do.mp3';
 import audioRE from '../audio/re.mp3';
 import audioMI from '../audio/mi.mp3';
 import './Home.css';
+import './back.css';
 
 
 function Home(){
@@ -37,37 +38,43 @@ function Home(){
         new Audio(audioMI).play();
     }
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
 
     return(
     <div className='pozadina'>
-        <div className='uvod stil-tekst'>
-            <h2 className='istakni'>Dobrodošli u prvu online glazbenu učionicu!</h2>
+        <div className='uvod stil-tekst back-red color-white'>
+            <h2 className=' color-black'>Dobrodošli u prvu online glazbenu učionicu!</h2>
             <text>Provest ćemo te kroz nezaboravnu pustolovinu upoznavanja svijeta glazbe.</text>
             <text>Upoznat ćeš kako glazba nastaje, tko ju stvara i koje instrumente koristi.</text>
             <h3>Upoznaj naše vesele glazbene robote koji će te voditi kroz pustolovinu.</h3>
-            <div className='okvir-tekst'>
+            <div className='okvir-tekst back-blue'>
                 <text>Na početku upoznavanja predstavi se robotima svojim imenom.</text>
                 <text><b>Zovem se</b></text>
                 <input type="text" placeholder='ime' value={ime} onChange={handleChange}></input>
             </div> 
             <text><i>Pritisni na robota i upoznaj se sa njim.</i></text>
         </div>
-        <div className='poruke'>
-                <text className='do'>{robotdo}</text>
-                <text className='re'>{robotre}</text>
-                <text className='mi'>{robotmi}</text>
+        <div className='back-yellow sredina'>
+            <div className='poruke'>
+                    <text className='do back-liyellow'>{robotdo}</text>
+                    <text className='re back-liyellow'>{robotre}</text>
+                    <text className='mi back-liyellow'>{robotmi}</text>
+            </div>
+            <div className='roboti'>
+                <button onClick={handleRobotDO} className="do back-yellow"><img className='robot' src={DO}></img></button>
+                <button onClick={handleRobotRE} className="re back-yellow"><img className='robot' src={RE}></img></button>
+                <button onClick={handleRobotMI} className="mi back-yellow"><img className='robot' src={MI}></img></button>
+            </div>
         </div>
-        <div className='roboti'>
-            <button onClick={handleRobotDO} className="do"><img className='robot' src={DO}></img></button>
-            <button onClick={handleRobotRE} className="re"><img className='robot' src={RE}></img></button>
-            <button onClick={handleRobotMI} className="mi"><img className='robot' src={MI}></img></button>
-        </div>
-        <div className='uvod stil-tekst'>
-            <text>Nakon što si upoznao naše robote možemo zajedno krenuti u glazbenu pustolovinu.</text>
+        
+        <div className='kraj stil-tekst back-green'>
+            <text className='color-white'>Nakon što si upoznao naše robote možemo zajedno krenuti u glazbenu pustolovinu.</text>
             <h2 className='istakni'>Neka pustolovina započne!</h2>
             <div className='btn-div'>
                 <img src={logo}></img>
-                <Link to='/ucionica' ><button className='kreni-btn stil-tekst'>Kreni</button></Link>
+                <a onClick={scrollToTop}><Link to='/ucionica' ><button className='kreni-btn stil-tekst'>KRENI</button></Link></a>
                 <img src={logo2}></img>
             </div>
         </div>

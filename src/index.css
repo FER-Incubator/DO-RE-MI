@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  background-image: url("./images/back.jpg");
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 code {
