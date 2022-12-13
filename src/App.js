@@ -7,6 +7,7 @@ import Quiz from './components/Quiz';
 import Fun from './components/Fun';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import {QuizProvider} from "./contexts/quiz";
 
 function App(){
 
@@ -17,7 +18,11 @@ function App(){
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/ucionica' element={<Classroom/>}/>
-          <Route path='/kviz' element={<Quiz/>}/>
+          <Route path='/kviz' element={
+            <QuizProvider>
+              <Quiz />
+            </QuizProvider>
+          }/>
           <Route path='/igraonica' element={<Fun/>}/>
         </Routes>
       </div>
