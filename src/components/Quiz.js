@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react';
 import {QuizContext} from "../contexts/quiz";
 import Question from "./Question";
+import './Quiz.css';
 
 const Quiz = () => {
     const [quizState, dispatch] = useContext(QuizContext)
@@ -13,8 +14,8 @@ const Quiz = () => {
                     <div className="results-info">
                         <div>Završio si sa kvizom.</div>
                         <div>
-                            Imaš {quizState.correctAnswerCount} od{" "}
-                            {quizState.questions.length} točnih odgovora.
+                            Imaš <b>{quizState.correctAnswerCount}</b> od{" "}
+                            <b>{quizState.questions.length}</b> točnih odgovora.
                         </div>
                         <div className="next-button"
                              onClick={() => dispatch({type: "RESTART"})}
@@ -34,7 +35,7 @@ const Quiz = () => {
                         className="next-button"
                         onClick={() => dispatch({type: 'NEXT_QUESTION'})}
                     >
-                        Iduće pitanje
+                        Iduće pitanje &#187;
                     </div>
                 </div>
             )}

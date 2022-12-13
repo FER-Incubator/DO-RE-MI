@@ -74,7 +74,7 @@ function Home(){
             <h2 className='istakni'>Neka pustolovina započne!</h2>
             <div className='btn-div'>
                 <img src={logo}></img>
-                <a onClick={scrollToTop}><Link to='/ucionica' ><button className='kreni-btn stil-tekst'>KRENI</button></Link></a>
+                <a onClick={scrollToTop}><Link to='/ucionica' ><button className='kreni-btn stil-tekst'>KRENI &#187;</button></Link></a>
                 <img src={logo2}></img>
             </div>
         </div>

@@ -43,7 +43,7 @@ function Classroom(){
                 <p className='nazivNav color-white'>Nakon istraživanja glazbe, vrijeme je da provjeriš  svoje zanje u kvizu!</p>
                 <div className='btn-div'>
                     <img src={logo}></img>
-                    <a onClick={scrollToTop}><Link to='/kviz' ><button className='kreni-btn'>Provjeri znanje</button></Link></a>
+                    <a onClick={scrollToTop}><Link to='/kviz' ><button className='kreni-btn'>Provjeri znanje &#187;</button></Link></a>
                     <img src={logo2}></img>
                 </div>
             </div>

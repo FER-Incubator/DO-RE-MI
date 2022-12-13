@@ -37,3 +37,22 @@
 .color-white{
     color: white;
 }
+
+.kreni-btn{
+    cursor:pointer;
+    background-color: rgb(195, 229, 252);
+    border-radius: 12px;
+    color: black;
+    /*border-color:  rgb(96, 178, 246);*/
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Comic Sans MS;
+}
+
+.kreni-btn:hover{
+    background-color: rgb(129, 203, 252);
+}
