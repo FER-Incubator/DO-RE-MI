@@ -1,0 +1,13 @@
+.bottomNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.lekcija-btn{
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    width: 330px;
+    font-size: medium;
+}

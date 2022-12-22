@@ -8,8 +8,8 @@ import logo2 from '../images/logorobot2.png';
 import audioDO from '../audio/do.mp3';
 import audioRE from '../audio/re.mp3';
 import audioMI from '../audio/mi.mp3';
-import './Home.css';
-import './back.css';
+import '../design/Home.css';
+import '../design/back.css';
 
 
 function Home(){

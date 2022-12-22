@@ -51,8 +51,28 @@
     margin-left: 10px;
     margin-right: 10px;
     font-family: Comic Sans MS;
+    width:330px;
 }
 
 .kreni-btn:hover{
     background-color: rgb(129, 203, 252);
+}
+
+.next-btn{
+    font-weight:normal;
+    font-size: medium;
+}
+
+.end-btn{
+    background-color: rgb(252, 74, 115);
+}
+.end-btn:hover{
+    background-color: rgb(252, 11, 67);
+}
+
+.back-btn{
+    background-color: rgb(247, 221, 118);
+}
+.back-btn:hover{
+    background-color: rgb(247, 198, 23);
 }

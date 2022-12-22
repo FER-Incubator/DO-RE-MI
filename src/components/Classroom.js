@@ -1,7 +1,7 @@
 import React ,{useState} from 'react';
 import {Link} from "react-router-dom";
-import './Classroom.css'
-import './back.css';
+import '../design/Classroom.css';
+import '../design/back.css';
 import DO from '../images/DOadventure.png';
 import note from '../images/note.png';
 import logo from '../images/logorobot.png';
@@ -31,12 +31,12 @@ function Classroom(){
                 <h3 className='nazivNav'>Glazbene lekcije:</h3>
                 <p className='nazivNav'><i>Pritiskom na gumb odaberi lekciju.</i></p>
                 <div className='navigacija'>
-                    <button className='btn prvi broj-pozadina'>Zvukovi</button>
-                    <button className='btn drugi broj-pozadina'>Obilježja</button>
-                    <button className='btn treci broj-pozadina'>Izvođači</button>
-                    <button className='btn cetvrti broj-pozadina'>Note</button>
-                    <button className='btn peti broj-pozadina'>Pjesme</button>
-                    <button className='btn sesti broj-pozadina'>Povijest</button>
+                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-1-zvukovi'><button className='btn prvi broj-pozadina'>Zvukovi</button></Link></a>
+                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-2-obiljezja'><button className='btn drugi broj-pozadina'>Obilježja</button></Link></a>
+                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-3-izvodaci'><button className='btn treci broj-pozadina'>Izvođači</button></Link></a>
+                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-4-note'><button className='btn cetvrti broj-pozadina'>Note</button></Link></a>
+                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-5-pjesme'><button className='btn peti broj-pozadina'>Pjesme</button></Link></a>
+                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-6-povijest'><button className='btn sesti broj-pozadina'>Povijest</button></Link></a>
                 </div>
             </div>
             <div className='back-red dno'>

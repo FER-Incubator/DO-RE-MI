@@ -1,0 +1,41 @@
+.containerUps{
+    display: flex;
+   justify-content: center;
+   padding: 40px 0px;
+}
+.pozdravUps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.robotUps{
+    width: 18em;  
+    cursor:pointer;
+}
+.porukaUps{
+    box-sizing: border-box;
+    width: 400px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid rgb(255, 8, 0);
+    background-color: rgb(255, 88, 82);
+    font-family: Comic Sans MS;
+    text-align: center;
+}
+
+.ups-slika{
+    height: 100px;
+    margin: auto;
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.btn-ups{
+    font-size: medium;
+}
