@@ -25,7 +25,6 @@ function Home(){
     }
     
     function handleRobotDO(){
-        let ucenikIme = ime;
         setRobotDO('Bok ' + ime + ', ja se zovem DO. Plave sam boje i svi me vole. Volim istraživati i veselim se našoj zajedničkoj pustolovini!');
         new Audio(audioDO).play();
     }

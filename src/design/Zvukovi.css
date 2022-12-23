@@ -1,0 +1,108 @@
+.poruka-lekcija-mi{
+    box-sizing: border-box;
+    /* width: 500px;
+    height: fit-content; */
+    padding: 10px;
+    /*border-radius: 10px;*/
+    border: solid rgb(255, 204, 0);
+    font-family: Comic Sans MS;
+    text-align: center;
+}
+.poruka-lekcija-do{
+    box-sizing: border-box;
+    /* width: 500px;
+    height: fit-content; */
+    padding: 10px;
+    /*border-radius: 10px;*/
+    border: solid rgb(68, 169, 252);
+    font-family: Comic Sans MS;
+    text-align: center;
+}
+.robot-mi{
+    width: 170px;
+    cursor: pointer;
+}
+.pozdrav-zvuk{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*margin-top: 20px;*/
+    align-items: center;
+}
+.tekst-mi{
+    box-sizing: border-box;
+    width: 530px;
+    margin: 0px 80px;
+}
+.tekst-do{
+    box-sizing: border-box;
+    border: solid rgb(195, 229, 252);
+    background-color: rgb(195, 229, 252);
+    padding: 20px;
+    width: 530px;
+    margin: 0px 80px;
+}
+
+.pokreni-zvuk{
+    cursor:pointer;
+    background-color: rgb(195, 229, 252);
+    border-radius: 12px;
+    color: black;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    padding-top: 5px;
+    margin: 5px 5px;
+    font-family: Comic Sans MS;
+    width:fit-content;
+}
+.pokreni-zvuk:hover{
+    background-color: rgb(129, 203, 252);
+}
+
+.play-btn{
+    width: 30px;
+    align-items: center;
+}
+
+.reprodukcija{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.animals{
+    padding: 20px 0px;
+}
+.animals1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.animals2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.animal-btn{
+    width: 120px;
+    margin: 5px 30px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(79, 223, 54);
+}
+
+.animals text{
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    border: solid rgb(79, 223, 54);
+    /*box-shadow: 0 8px 16px 0 rgb(238, 238, 145), 0 6px 20px 0 rgb(238, 238, 145);*/
+    text-align: center;
+}
+
