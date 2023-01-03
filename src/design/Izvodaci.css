@@ -1,0 +1,69 @@
+.izvodaci {
+    width: 975px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Comic Sans MS;
+}
+
+
+.div_btn {
+    display: flex;
+}
+
+.btn_lijevi {
+    background-color: transparent;
+    border: transparent;
+}
+
+.btn_desni {
+    background-color: transparent;
+    border: transparent;
+    alignment: right;
+    margin-left: auto;
+}
+
+
+
+
+.cursor {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(165, 165, 165, 50%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.div_harfa {
+    color: #B4F8C8;
+}
+.div_klarinet {
+    color: #FBE7C6;
+    text-align: right;
+}
+.div_fagot {
+    color: #A0E7E5;
+}
+.div_flauta {
+    color: #FFAEBC;
+    text-align: right;
+}
+.div_oboa {
+    color: #FFB001;
+}
+.div_kontrabas {
+    color: #44EE77;
+    text-align: right;
+}
+.div_viola {
+    color: #019992;
+}
+.div_celo {
+    color: #FB475E;
+    text-align: right;
+}
+.div_violina {
+    color: #272F40;
+}
