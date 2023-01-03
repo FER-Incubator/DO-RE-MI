@@ -18,28 +18,34 @@
     font-family: Comic Sans MS;
     text-align: center;
 }
+
 .robot-mi{
     width: 170px;
     cursor: pointer;
 }
-.pozdrav-zvuk{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /*margin-top: 20px;*/
-    align-items: center;
-}
+    .pozdrav-zvuk{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /*margin-top: 20px;*/
+        align-items: center;
+    }
 .tekst-mi{
     box-sizing: border-box;
     width: 530px;
     margin: 0px 80px;
+}
+
+.robot-do{
+    width: 190px;
+    cursor: pointer;
 }
 .tekst-do{
     box-sizing: border-box;
     border: solid rgb(195, 229, 252);
     background-color: rgb(195, 229, 252);
     padding: 20px;
-    width: 530px;
+    width: 730px;
     margin: 0px 80px;
 }
 
@@ -72,31 +78,39 @@
     padding: 10px 0px;
 }
 .animals{
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 .animals1{
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    justify-content: center;    
 }
 
 .animals2{
     display: grid;
     grid-template-columns: auto auto;
+    justify-items: center;
+    align-self: center;
     justify-content: center;
 }
 
 .animal-btn{
-    width: 120px;
+    width: fit-content;
     margin: 5px 30px;
     cursor: pointer;
     border: none;
     background-color: rgb(79, 223, 54);
 }
 
+.animal-btn image{
+    align-content: center;
+}
+
 .animals text{
     box-sizing: border-box;
-    width: 200px;
+    /*width: 200px;*/
     height: 40px;
     padding: 5px;
     margin: 0px 10px;
@@ -104,5 +118,12 @@
     border: solid rgb(79, 223, 54);
     /*box-shadow: 0 8px 16px 0 rgb(238, 238, 145), 0 6px 20px 0 rgb(238, 238, 145);*/
     text-align: center;
+}
+
+.ljudi-zvukovi{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-self: center;
 }
 

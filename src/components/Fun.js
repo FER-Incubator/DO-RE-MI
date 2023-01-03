@@ -13,7 +13,7 @@ function Fun(){
     }
 
     return(
-        <div className='back-liyellow'>
+        <div className=''>
             <div className='containerUps'>
                 <img src={cone} className='ups-slika'></img>
                 <div className='pozdravUps'>
