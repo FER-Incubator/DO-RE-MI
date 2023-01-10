@@ -1,4 +1,4 @@
-import React ,{useState} from 'react';
+import React ,{useState, useRef} from 'react';
 import {Link} from "react-router-dom";
 import '../design/Lekcija.css';
 import '../design/back.css';
@@ -6,13 +6,32 @@ import '../design/Obiljezja.css';
 import MI1 from '../images/mi1.png';
 import MI2 from '../images/mi2.png';
 import DO from '../images/DO.png';
-import DOviri from '../images/doviri.png';
+import bubanj from '../images/jap_bubanj.png';
+import play from '../images/play.png';
+import pause from '../images/pause.png';
+import audiobubanj from '../audio/bubanj.mp3';
+import videobubanj from '../video/bubnjevi.mp4';
 
 
 function Obiljezja(){
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
+
+    const bubanjRef = useRef();
+
+    const handleStart = () => {
+       bubanjRef.current.play();
+    }
+
+    const handlePause = () => {
+        bubanjRef.current.pause();
+    }
+    function handleBubanj(){
+        new Audio(audiobubanj).play();
+    }
+
+
 
     return(
         <div>
@@ -23,7 +42,7 @@ function Obiljezja(){
             <div className='poruka-lekcija-do-obiljezja back-darkblue pozdrav-obiljezja'>
                 <img className='' src={DO} width='250px'></img>
                 <div className='tekst-do-obiljezja'>
-                <text className=''>Glazbi možemo pridijeliti obilježja. <br></br> 
+                <text className=''>Glazbi možemo dodijeliti obilježja. <br></br> 
                 Mi ćemo navesti <b>7 osnovnih glazbenih obilježja</b> koja možemo prepoznati i primjeniti na sva glazbena djela.</text>
                     <div className='lista'>
                         <ul className='lista-obiljezja'> 
@@ -43,11 +62,30 @@ function Obiljezja(){
                 <h2 className='stil-tekst'>1.Ritam</h2>
             </div>
 
-            <div className='poruka-lekcija-do-obiljezja back-darkblue pozdrav-viri'>
-                <img className='robot-do' src={DOviri}></img>
-                <div className='tekst-do'>
-                <text className=''>Kao što smo čuli u prethodnom primjeru, životinje se glasaju.<br></br>
-                        Svaka životinja se glasa na svoj način.<br></br>Tako se ističe od drugih vrsta životinja.<br></br>Životinje dok se glasaju stvaraju razne zvukove.</text>
+            <div className='back-gray stil-tekst obiljezje-opis'>
+                <div className='uvod'>
+                    <p className='tekst-opis'><b className='color-red'>Ritam</b>  možemo u općem smislu definirati kao <br></br><b className='color-green'>ponavljanje određenih pojava u pravilnim vremenskim razmacima</b>.<br></br>
+                    U <b className='color-yellow'>svijetu glazbe</b>, ritam je obilježje glazbe koje određuje <b className='color-yellow'>trajanje u glazbi</b>.<br></br>
+                    Predstavlja <b className='color-blue'>odnose između zvukova različitog trajanja i jakosti</b>.<br></br>
+                    Ritam može biti odlična glazba sama za sebe. Najčešće se veže uz tradicionalnu glazbu naroda Crne Afrike, Indijanaca, Inuita (Eskima) i nekih naroda Azije.</p>
+                </div>
+                <div className='div-bubanj'>
+                    <p className='tekst-opis'>Na slici je prikazan tradicionalni japanski instrument, japanski bubanj <b>Taiko</b>.<br></br>
+                        <i>Pritisni na sličicu i poslušaj zvuk japanskog bubnja.</i>
+                    </p>
+                    <button onClick={handleBubanj} className="btn-bubanj back-gray"><img className='' src={bubanj} width='150px'></img></button>
+                </div>
+                <p className='tekst-opis'>U nastavku se nalazi video koji prikazuje japanski sastav Kodo koji svira Taiko bubnjeve.<br></br>
+                <i>Pritiskom na gumb</i><button className='pokreni-zvuk' title='Pokreni'><img className='play-btn' src={play}></img></button> <i>započinje reprodukcija video sadržaja.</i></p>
+                <div className='reprodukcija'>
+                    <button className='pokreni-zvuk' title='Pokreni' onClick={handleStart}><img className='play-btn' src={play}></img></button>
+                    <button className='pokreni-zvuk' title='Zaustavi' onClick={handlePause}><img className='play-btn' src={pause}></img></button>
+                    <p className='stil-tekst'>Japanski sastav Kodo - "O-Daiko"</p>
+                </div>
+                <div>
+                    <video width="600" ref={bubanjRef}>
+                        <source src={videobubanj}></source>
+                    </video>
                 </div>
             </div>
 

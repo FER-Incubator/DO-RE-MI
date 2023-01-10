@@ -40,6 +40,22 @@
     color: white;
 }
 
+.color-red{
+    color: red;
+}
+
+.color-green{
+    color: rgb(54, 210, 26);
+}
+
+.color-yellow{
+    color: rgb(225, 180, 2);
+}
+
+.color-blue{
+    color: rgb(15, 145, 252);
+}
+
 .kreni-btn{
     cursor:pointer;
     background-color: rgb(195, 229, 252);
