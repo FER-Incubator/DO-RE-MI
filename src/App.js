@@ -14,6 +14,7 @@ import Fun from './components/Fun';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import {QuizProvider} from "./contexts/quiz";
+import Memory from './components/Memory';
 
 
 function App(){
@@ -37,6 +38,7 @@ function App(){
             </QuizProvider>
           }/>
           <Route path='/igraonica' element={<Fun/>}/>
+          <Route path='/igraonica/memory' element={<Memory/>}/>
         </Routes>
       </div>
     <Footer/>
