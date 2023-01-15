@@ -1,6 +1,6 @@
 import React ,{useState} from 'react';
 import {Link} from "react-router-dom";
-import DO from '../images/DO.png'; //za sliku staviti
+import DO from '../images/DO.png'; 
 import RE from '../images/RE.png';
 import MI from '../images/MI.png';
 import logo from '../images/logorobot.png';
@@ -18,7 +18,6 @@ function Home(){
     const [robotre,setRobotRE] = useState('');
     const [robotmi,setRobotMI] = useState('');
 
-   new Audio(audioDO);
 
     function handleChange(e){
         setIme(e.target.value);

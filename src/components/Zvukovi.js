@@ -127,8 +127,8 @@ function Zvukovi(){
             <div className='poruka-lekcija-do back-darkblue pozdrav-zvuk'>
                 <img className='robot-do' src={DO}></img>
                 <div className='tekst-do'>
-                <text className=''>Kao što smo čuli u prethodnom primjeru, životinje se glasaju.<br></br>
-                        Svaka životinja se glasa na svoj način.<br></br>Tako se ističe od drugih vrsta životinja.<br></br>Životinje dok se glasaju stvaraju razne zvukove.</text>
+                <text className=''>Kao što smo čuli u prethodnom primjeru, <b className='color-green'>životinje se glasaju</b>.<br></br>
+                        Svaka životinja se glasa na svoj način.<br></br>Tako se ističe od drugih vrsta životinja.<br></br>Životinje dok se glasaju <b className='color-yellow'>stvaraju razne zvukove</b>.</text>
                 </div>
             </div>
 
@@ -156,8 +156,8 @@ function Zvukovi(){
                 <img className='robot-do' src={DO}></img>
                 <div className='tekst-do'>
                 <text className=''>Dok govoriš, stvaraš gomile zvukova sa određenim značenjem.<br></br> To značenje smo odredili mi, ljudi.<br></br> 
-                Pomoću govora izmjenjujemo misli i ideje.<br></br> Glazba je umjetnost kojom također prenosimo misli i ideje, ali i više od toga.<br></br> Glazbom možemo prenositi svoje osjećaje (jesmo li sretni ili tužni, ljuti ili smireni). <br></br>
-                Za stavranje glazbe su potrebni ljudi.<br></br> Pišemo pjesme, pjevamo, sviramo i plešemo.</text>
+                Pomoću govora izmjenjujemo misli i ideje.<br></br> <b className='color-red'>Glazba</b> je <b className='color-green'>umjetnost</b> kojom također prenosimo misli i ideje, ali i više od toga.<br></br> Glazbom možemo prenositi svoje <b className='color-yellow'>osjećaje</b> (jesmo li sretni ili tužni, ljuti ili smireni). <br></br>
+                Za stavranje glazbe su potrebni ljudi.<br></br> <b className='color-blue'>Pišemo pjesme, pjevamo, sviramo i plešemo</b>.</text>
                 </div>
             </div>        
             

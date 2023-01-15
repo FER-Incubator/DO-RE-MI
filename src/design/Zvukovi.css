@@ -2,7 +2,7 @@
     box-sizing: border-box;
     /* width: 500px;
     height: fit-content; */
-    padding: 10px;
+    padding: 50px;
     /*border-radius: 10px;*/
     border: solid rgb(255, 204, 0);
     font-family: Comic Sans MS;
@@ -12,7 +12,7 @@
     box-sizing: border-box;
     /* width: 500px;
     height: fit-content; */
-    padding: 10px;
+    padding: 50px;
     /*border-radius: 10px;*/
     border: solid rgb(68, 169, 252);
     font-family: Comic Sans MS;
@@ -23,13 +23,13 @@
     width: 170px;
     cursor: pointer;
 }
-    .pozdrav-zvuk{
+.pozdrav-zvuk{
         display: flex;
         flex-direction: row;
         justify-content: center;
         /*margin-top: 20px;*/
         align-items: center;
-    }
+}
 .tekst-mi{
     box-sizing: border-box;
     width: 530px;
@@ -75,6 +75,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 10px 0px;
 }
 .animals{

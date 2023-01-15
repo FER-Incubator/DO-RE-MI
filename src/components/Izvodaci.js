@@ -74,19 +74,21 @@ function Izvodaci(){
     })
 
     return(
+        <div>
+            <div className="cursor" id="cursor"></div>
+            <div className='naslov-lekcija back-blue'>
+                <h1 className='stil-tekst'>Obilježja glazbe</h1>
+            </div>
+            
         <div className="izvodaci">
 
 
-                <div className="cursor" id="cursor"></div>
+                
 
 
 
 
-            <div className='bottomNav'>
-            <a onClick={scrollToTop}><Link to='/ucionica/lekcija-2-obiljezja' ><button className='kreni-btn next-btn'>&#171; Lekcija 2: Obilježja</button></Link></a>
-            <button className='stil-tekst lekcija-btn'>Lekcija 3: Izvođači</button>
-            <a onClick={scrollToTop}><Link to='/ucionica/lekcija-4-note' ><button className='kreni-btn next-btn'>Lekcija 4: Note &#187;</button></Link></a>
-            </div>
+            
             <div>
                 <p>U ovom dijelu upoznat ćemo se sa instrumentima koje koriste izvođači u orkestru. Orkestar je
                     instrumentalni glazbeni ansambl koji je obično prilično velik, najčešće sa sekcijama gudača,
@@ -178,10 +180,13 @@ function Izvodaci(){
                     <h3>Koncert-majstor je glavni violinist koji djeluje kao vođa orkestra</h3>
                 </div>
             </div>
-
-
-
-
+            
+        </div>
+            <div className='bottomNav'>
+                <a onClick={scrollToTop}><Link to='/ucionica/lekcija-2-obiljezja' ><button className='kreni-btn next-btn'>&#171; Lekcija 2: Obilježja</button></Link></a>
+                <button className='stil-tekst lekcija-btn'>Lekcija 3: Izvođači</button>
+                <a onClick={scrollToTop}><Link to='/ucionica/lekcija-4-note' ><button className='kreni-btn next-btn'>Lekcija 4: Note &#187;</button></Link></a>
+            </div>
         </div>
 
     )
