@@ -1,0 +1,138 @@
+.naslov{
+    text-align: center;
+    padding: 10px 0px;
+    font-family: Comic Sans MS;
+    background-color: rgb(195, 229, 252);
+
+}
+
+.testnidiv{
+    width: 300px;
+}
+
+.pocetnidiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: rgb(112, 188, 252);
+    padding-bottom: 50px;
+}
+
+.drugidiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #de6a6a;
+}
+.trecidiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #de6a6a;
+}
+
+.zvu{
+    padding-bottom: 50px;
+}
+
+.cetvrtidiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #fff04d;
+    padding-bottom: 50px;
+}
+
+
+
+.notapundiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #A8D4AD;
+    padding-bottom: 50px;
+}
+
+.notapoldiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #E8EC67;
+    padding-bottom: 50px;
+}
+
+.notacetdiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #92B9BD;
+    padding-bottom: 50px;
+}
+
+.notaosmdiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #F2F79E;
+    padding-bottom: 50px;
+}
+
+.notasesdiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    background-color: #F78154;
+    padding-bottom: 50px;
+}
+
+.pcijela{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.ppola{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.pcet{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.posm{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.pses{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
