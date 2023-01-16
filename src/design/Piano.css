@@ -1,0 +1,19 @@
+.piano{
+    display: flex;
+    flex-direction: row;
+}
+
+.glavnidiv_klav{
+    background-color: #739cd1;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.naslovnidiv_klav{
+    font-family: Comic Sans MS;
+    padding-bottom: 50px;
+}

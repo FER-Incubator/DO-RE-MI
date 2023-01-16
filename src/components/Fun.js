@@ -27,6 +27,7 @@ function Fun(){
             </div>
             <a onClick={scrollToTop} className='center-btn'><Link to='/ucionica'><button className='kreni-btn btn-ups'>&#171; Povratak: Učionica</button></Link></a>
             <a onClick={scrollToTop} className='center-btn'><Link to='/igraonica/memory'><button className='kreni-btn btn-ups'>Igra Memory</button></Link></a>
+            <a onClick={scrollToTop} className='center-btn'><Link to='/igraonica/klavijatura'><button className='kreni-btn btn-ups'>Klavijatura</button></Link></a>
         </div>
     )
 }
