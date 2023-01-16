@@ -2,10 +2,9 @@ import React ,{useState} from 'react';
 import {Link} from "react-router-dom";
 import '../design/Fun.css';
 import '../design/back.css';
-import DO from '../images/DOups.png';
-import cone from '../images/cone.png';
-import logo from '../images/logorobot.png';
-import logo2 from '../images/logorobot2.png';
+import MI from '../images/MI.png';
+import note from '../images/note.png';
+
 
 function Fun(){
     const scrollToTop = () => {
@@ -13,21 +12,25 @@ function Fun(){
     }
 
     return(
-        <div className=''>
-            <div className='containerUps'>
-                <img src={cone} className='ups-slika'></img>
-                <div className='pozdravUps'>
-                    <img className='robotUps' src={DO}></img>
-                    <text className='porukaUps'><b>Upsssssss....!</b><br></br> 
-                     Podstranica "Igraonica" trenutno nije dostupna.<br></br> 
-                     No ne brini nudimo ti pregršt zanimljivog i zabavnog sadržaja za istraživanje na podstranici "Učionica".
-                    </text>
-                </div>
-                <img src={cone} className='ups-slika'></img>
+        <div className='stil-tekst'>
+            <div className='mi-div back-yellow'>
+            <img className='' src={MI} width='270px'></img>
+                <p className='poruke-mi'>
+                    <h2 className='color-pink'>Juhuuuu! Obožavam igru i zabavu.</h2>
+                    <h4>Želiš li se i ti zabaviti?</h4>
+                    <h4>Ukoliko je odgovor da, onda nema čekanja -neka zabava započne !</h4>
+                </p>
             </div>
-            <a onClick={scrollToTop} className='center-btn'><Link to='/ucionica'><button className='kreni-btn btn-ups'>&#171; Povratak: Učionica</button></Link></a>
-            <a onClick={scrollToTop} className='center-btn'><Link to='/igraonica/memory'><button className='kreni-btn btn-ups'>Igra Memory</button></Link></a>
-            <a onClick={scrollToTop} className='center-btn'><Link to='/igraonica/klavijatura'><button className='kreni-btn btn-ups'>Klavijatura</button></Link></a>
+            
+            <div className='igre-div back-red'>
+                <p>Na raspolaganju su ti dvije zabavne, ali i vrlo edukativne igre.</p>
+                <p><i>Pritiskom na pojedini gumb započinje igra.</i></p>
+                <div className='igre-btn'>
+                    <a onClick={scrollToTop} className='btn-game'><Link to='/igraonica/memory'><button className='btn-fun memori'><b>Igra Memory</b></button></Link></a>
+                    <a onClick={scrollToTop} className='btn-game'><Link to='/igraonica/klavijatura'><button className='btn-fun klavir'><b>Klavijatura</b></button></Link></a>
+                </div>
+            </div>
+            
         </div>
     )
 }

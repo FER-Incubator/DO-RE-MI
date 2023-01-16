@@ -154,10 +154,10 @@ function Obiljezja(){
             </div>
 
             <div className='poruka-lekcija-do-obiljezja back-darkblue pozdrav-obiljezja'>
-                <img className='' src={DO} width='250px'></img>
+                <img className='' src={DO} width='280px'></img>
                 <div className='tekst-do-obiljezja'>
-                <text className=''>Glazbi možemo dodijeliti obilježja. <br></br> 
-                Mi ćemo navesti <b>7 osnovnih glazbenih obilježja</b> koja možemo prepoznati i primjeniti na sva glazbena djela.</text>
+                <h4 className=''>Glazbi možemo dodijeliti obilježja. <br></br> 
+                Mi ćemo navesti <b>7 osnovnih glazbenih obilježja</b> koja možemo prepoznati i primjeniti na sva glazbena djela.</h4>
                     <div className='lista'>
                         <ul className='lista-obiljezja'> 
                             <li><a href='#ritam'><button className='broj-btn' title='Ritam'>1.</button></a>Ritam</li>

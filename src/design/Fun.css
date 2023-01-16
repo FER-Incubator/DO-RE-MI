@@ -1,41 +1,58 @@
-.containerUps{
-    display: flex;
-   justify-content: center;
-   padding: 40px 0px;
-}
-.pozdravUps{
+.mi-div{
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-}
-.robotUps{
-    width: 18em;  
-    cursor:pointer;
-}
-.porukaUps{
-    box-sizing: border-box;
-    width: 400px;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    border: solid rgb(255, 8, 0);
-    background-color: rgb(255, 88, 82);
     font-family: Comic Sans MS;
-    text-align: center;
+    padding-bottom: 50px;
 }
 
-.ups-slika{
-    height: 100px;
-    margin: auto;
+.poruke-mi{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
 }
-
-.center-btn{
+.igre-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0px;
+}
+.memori{
+    background-image: url("../images/memori2.png");
+    background-size: 254px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.klavir{
+    background-image: url("../images/klavir2.png");
+    background-size: 260px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.memori:hover{
+    background-color: rgb(255, 204, 0);
+  }
+.klavir:hover{
+  background-color: rgb(68, 169, 252);
+}
+.btn-fun{
+    padding:70px 70px;
+    margin:10px 5px;
+    width: 257px;
+    height: 190px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: solid rgb(252, 52, 99);
+    font-size: larger;
+    font-weight: bold;
+    font-family: Comic Sans MS;
+}
+.igre-btn{
     display: flex;
     justify-content: center;
-    padding: 40px 0px;
 }
-
-.btn-ups{
-    font-size: medium;
+.btn-game{
+    padding: 20px 60px;
 }

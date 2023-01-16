@@ -16,17 +16,16 @@ function Classroom(){
 
     return(
         <div>
-            <div className='container back-green'>
-                <div className='pozdrav'>
-                    <img className='robot' src={DO}></img>
-                    <text className='poruka back-yellow'>Evo nas u virtualnoj učionici.<br></br> 
-                    Ovdje možeš vidjeti glavni izbornik sa svim lekcijama koje ćemo zajedno istražiti.<br></br> 
-                    Pritiskom na pojedinu lekciju započinje glazbena pustolovina.<br></br>
-                    Stoga, opremi se sa svom potrebnom opremom i neka pustolovina započne! 
-                    </text>
-                </div>
-                <img src={note} className='note-slika'></img>
+            <div className='do-div back-green'>
+            <img className='' src={DO} width='350px'></img>
+                <p className='poruke-do'>
+                    <h2 className='color-blue'>Evo nas u virtualnoj učionici !</h2>
+                    <h4>Ovdje možeš vidjeti glavni izbornik sa svim lekcijama koje ćemo zajedno istražiti.</h4>
+                    <h4>Pritiskom na pojedinu lekciju započinje glazbena pustolovina.</h4>
+                    <h4>Stoga, opremi se sa svom potrebnom opremom i neka pustolovina započne!</h4>
+                </p>
             </div>
+            
             <div className='izbornik back-gray'>
                 <h3 className='nazivNav'>Glazbene lekcije:</h3>
                 <p className='nazivNav'><i>Pritiskom na gumb odaberi lekciju.</i></p>

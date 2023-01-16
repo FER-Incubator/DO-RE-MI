@@ -28,7 +28,7 @@ function Memory(){
                 <button className="ponovo_btn" onClick={refreshPage}>Igraj ponovo</button>
             </div>
 
-
+            <a onClick={scrollToTop}><Link to='/igraonica' ><button className='kreni-btn next-btn'>&#171; Povratak: Igraonica</button></Link></a>
 
         </div>
     )

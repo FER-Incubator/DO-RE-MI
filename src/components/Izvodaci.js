@@ -12,7 +12,7 @@ import kontrabas from '../images/Instrumenti_slike/kontrabas.png'
 import oboa from '../images/Instrumenti_slike/oboa.png'
 import viola from '../images/Instrumenti_slike/viola.png'
 import violina from '../images/Instrumenti_slike/violina.png'
-
+import DO from '../images/DO.png';
 import harfa_zv from '../audio/Instrumenti_zvukovi/harfa.mp3'
 import klarinet_zv from '../audio/Instrumenti_zvukovi/klarinet.mp3'
 import celo_zv from '../audio/Instrumenti_zvukovi/celo.mp3'
@@ -79,6 +79,15 @@ function Izvodaci(){
             <div className='naslov-lekcija back-blue'>
                 <h1 className='stil-tekst'>Obilježja glazbe</h1>
             </div>
+            <div className="pocetnidiv">
+                <p>
+                    <h4>U ovom dijelu upoznat ćemo se sa instrumentima koje koriste izvođači u orkestru.</h4>
+                    <h4>Orkestar je instrumentalni glazbeni ansambl koji je obično prilično velik.<br></br> 
+                    Najčešće sa sekcijama gudača, limenih glazbala, drvenih puhačkih glazbala te udaraljkama. </h4>
+                    <h4>Zajedno ćemo proći sve instrumente, upoznati se s njima i poslušati kako zvuče.</h4>
+                </p>
+                <img className='' src={DO} width='250px'></img>
+            </div>
             
         <div className="izvodaci">
 
@@ -88,14 +97,10 @@ function Izvodaci(){
 
 
 
+            <p className='uputa'>
+                <i>Pritiskom na sličicu započinje reprodukcija audio sadržaja.</i>
+            </p>
             
-            <div>
-                <p>U ovom dijelu upoznat ćemo se sa instrumentima koje koriste izvođači u orkestru. Orkestar je
-                    instrumentalni glazbeni ansambl koji je obično prilično velik, najčešće sa sekcijama gudača,
-                    limenih glazbala, drvenih puhačkih glazbala, uglavnom i s udaraljkama. Zajedno ćemo proći sve
-                    instrumente, upoznati se s njima i čuti kako zvuče.
-                </p>
-            </div>
             <div className="div_btn">
                 <button className="btn_lijevi" onClick={HarfaFun}><img src={harfa} width='200px'></img></button>
                         <div className="div_harfa">

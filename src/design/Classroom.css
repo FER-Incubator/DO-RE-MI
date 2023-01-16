@@ -1,37 +1,18 @@
-.robot{
-    width: 25em;  
-    cursor:pointer;
-}
-
-.pozdrav{
+.do-div{
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-}
-
-.poruka{
-    box-sizing: border-box;
-    width: 400px;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    border: solid rgb(255, 204, 0);
+    justify-content: center;
+    align-items: center;
     font-family: Comic Sans MS;
-    text-align: center;
+    padding-bottom: 50px;
 }
 
-.note-slika{
-    height: 200px;
-    margin: auto;
+.poruke-do{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
 }
-
-.container{
-    display: flex;
-   justify-content: space-between;
-   padding: 50px;
-   /*margin: 30px 0px;*/
-}
-
 .nazivNav{
     font-family: Comic Sans MS;
     text-align: center;
