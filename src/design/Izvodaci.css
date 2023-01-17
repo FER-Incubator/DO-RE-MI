@@ -6,6 +6,33 @@
     font-family: Comic Sans MS;
 }
 
+.tekst-izvod{
+    box-sizing: border-box;
+    border: solid rgb(195, 229, 252);
+    background-color: rgb(195, 229, 252);
+    padding: 20px;
+    width: 730px;
+    margin: 0px 80px;
+    border-radius: 12px;
+}
+
+.pozdrav-izvod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*margin-top: 20px;*/
+    align-items: center;
+}
+
+.div-izvod{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Comic Sans MS;
+    padding-bottom: 50px;
+}
 
 .div_btn {
     display: flex;

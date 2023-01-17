@@ -23,12 +23,25 @@ import nota_cet_sl from '../images/nota_cet.png'
 import nota_osm_sl from '../images/nota_osm.png'
 import nota_ses_sl from '../images/nota_ses.png'
 
+import play from '../images/play.png';
+import pause from '../images/pause.png';
+
 import ReactAudioPlayer from "react-audio-player";
 
 function Note(){
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
+
+    const [audioDur,setAudioDur] = useState(new Audio(dur_zv));
+
+    const handleStart = () => {
+        audioDur.play();
+     }
+ 
+     const handlePause = () => {
+        audioDur.pause();
+     }
 
     return(
         <div>
@@ -37,7 +50,7 @@ function Note(){
                 <h1>Note</h1>
             </div>
 
-            <div className="pocetnidiv">
+            <div className="pocetnidiv back-darkblue">
                 <p>
                     <h3>Note označavaju ideju zapisa glazbe na papir, rabi se notno crtovlje s 5 crta</h3>
                     <h3>gdje pozicija note u odnosu na crtovlje označava njenu visinu,a grafički izgled trajanje, </h3>
@@ -52,24 +65,28 @@ function Note(){
                     <h3>Svaka nota ima svoje ime koje označava njenu visinu, note po redu zovemo</h3>
                     <h3>prima, sekunda, terca, kvarta, kvinta, seksta i septima,</h3>
                     <h3>te iste note poznate su i po imenima</h3>
-                    <h3>DO, RE, MI, FA, SOL, LA i TI</h3>
+                    <h3><b className='color-blue'>DO</b>, <b className='color-pink'>RE</b>, <b className='color-yellow'>MI</b>, <b className='color-green'>FA</b>, <b className='color-orange'>SOL</b>, <b className='color-brown'>LA</b> i <b className='color-purple'>TI</b></h3>
                 </p>
             </div>
 
-            <div className="trecidiv">
+            <div className="trecidiv back-red">
                 <p></p>
                 <p>
                     <h3>Ispod prvo možemo poslušati i vidjeti prikaz nota od najniže do najviše,</h3>
                     <h3>pa onda i u drugome smjeru od najviše do najniže</h3>
                 </p>
                 <img className='' src={dur_sl} width='800px'></img>
-                <ReactAudioPlayer className="zvu"
-                    src = {dur_zv}
-                    controls
-                />
+                <p>
+                <i>Pritiskom na gumb</i><button className='pokreni-zvuk' title='Pokreni'><img className='play-btn' src={play}></img></button> <i>započinje reprodukcija audio sadržaja.</i>
+                </p>
+                <div className='reprodukcija'>
+                    <button className='pokreni-zvuk' title='Pokreni' onClick={handleStart}><img className='play-btn' src={play}></img></button>
+                    <button className='pokreni-zvuk' title='Zaustavi' onClick={handlePause}><img className='play-btn' src={pause}></img></button>
+                    <p className='stil-tekst'>Ton od najniže do najviše note</p>
+                </div>
             </div>
 
-            <div className="cetvrtidiv">
+            <div className="cetvrtidiv back-yellow">
                 <p>
                     <h3>Note isto razlikujemo po njihovom izgledu i svaka ima svoje ime</h3>
                     <h3>ovisno o izgledu, tu su cijela nota, polovinka, četvrtinka,</h3>

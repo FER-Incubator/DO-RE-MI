@@ -77,13 +77,13 @@ function Izvodaci(){
         <div>
             <div className="cursor" id="cursor"></div>
             <div className='naslov-lekcija back-blue'>
-                <h1 className='stil-tekst'>Obilježja glazbe</h1>
+                <h1 className='stil-tekst'>Izvođači</h1>
             </div>
-            <div className="pocetnidiv">
-                <p>
-                    <h4>U ovom dijelu upoznat ćemo se sa instrumentima koje koriste izvođači u orkestru.</h4>
-                    <h4>Orkestar je instrumentalni glazbeni ansambl koji je obično prilično velik.<br></br> 
-                    Najčešće sa sekcijama gudača, limenih glazbala, drvenih puhačkih glazbala te udaraljkama. </h4>
+            <div className="div-izvod back-darkblue">
+                <p className='tekst-izvod poruke-izvod tekst-align'>
+                    <h4>U ovom dijelu upoznat ćemo se sa <b className='color-green'>instrumentima</b> koje koriste izvođači u orkestru.</h4>
+                    <h4>Orkestar je instrumentalni glazbeni ansambl koji je obično prilično velik.</h4> 
+                   <h4>Najčešće sa <b className='color-yellow'>sekcijama gudača, limenih glazbala, drvenih puhačkih glazbala te udaraljkama </b>.</h4>
                     <h4>Zajedno ćemo proći sve instrumente, upoznati se s njima i poslušati kako zvuče.</h4>
                 </p>
                 <img className='' src={DO} width='250px'></img>

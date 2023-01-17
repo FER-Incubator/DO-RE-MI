@@ -1,28 +1,19 @@
-.poruka-lekcija-mi{
-    box-sizing: border-box;
-    /* width: 500px;
-    height: fit-content; */
-    padding: 50px;
-    /*border-radius: 10px;*/
-    border: solid rgb(255, 204, 0);
+.div-zvuk{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family: Comic Sans MS;
-    text-align: center;
-}
-.poruka-lekcija-do{
-    box-sizing: border-box;
-    /* width: 500px;
-    height: fit-content; */
-    padding: 50px;
-    /*border-radius: 10px;*/
-    border: solid rgb(68, 169, 252);
-    font-family: Comic Sans MS;
-    text-align: center;
+    padding-bottom: 50px;
 }
 
-.robot-mi{
-    width: 170px;
-    cursor: pointer;
+.poruke-zvuk{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
 }
+
 .pozdrav-zvuk{
         display: flex;
         flex-direction: row;
@@ -30,23 +21,19 @@
         /*margin-top: 20px;*/
         align-items: center;
 }
-.tekst-mi{
-    box-sizing: border-box;
-    width: 530px;
-    margin: 0px 80px;
-}
 
-.robot-do{
-    width: 190px;
-    cursor: pointer;
-}
-.tekst-do{
+.tekst-zvuk{
     box-sizing: border-box;
     border: solid rgb(195, 229, 252);
     background-color: rgb(195, 229, 252);
     padding: 20px;
     width: 730px;
     margin: 0px 80px;
+    border-radius: 12px;
+}
+
+.tekst-align{
+    text-align: center;
 }
 
 .pokreni-zvuk{
@@ -79,7 +66,7 @@
     padding: 10px 0px;
 }
 .animals{
-    padding: 30px 0px;
+    padding: 90px 0px;
 }
 .animals1{
     display: grid;

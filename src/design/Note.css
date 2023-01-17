@@ -17,7 +17,6 @@
     justify-content: center;
     align-items: center;
     font-family: Comic Sans MS;
-    background-color: rgb(112, 188, 252);
     padding-bottom: 50px;
 }
 
@@ -28,7 +27,7 @@
     justify-content: center;
     align-items: center;
     font-family: Comic Sans MS;
-    background-color: #de6a6a;
+    background-color: rgb(247, 108, 108);
 }
 .trecidiv{
     display: flex;
@@ -36,7 +35,7 @@
     justify-content: center;
     align-items: center;
     font-family: Comic Sans MS;
-    background-color: #de6a6a;
+    background-color: rgb(247, 108, 108);
 }
 
 .zvu{
@@ -50,7 +49,6 @@
     justify-content: center;
     align-items: center;
     font-family: Comic Sans MS;
-    background-color: #fff04d;
     padding-bottom: 50px;
 }
 

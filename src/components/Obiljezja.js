@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 import '../design/Lekcija.css';
 import '../design/back.css';
 import '../design/Obiljezja.css';
-import MI1 from '../images/mi1.png';
-import MI2 from '../images/mi2.png';
 import DO from '../images/DO.png';
 import bubanj from '../images/jap_bubanj.png';
 import play from '../images/play.png';
 import pause from '../images/pause.png';
+import stop from '../images/stop.png';
+import lupa from '../images/lupa.png';
 import slow from '../images/slow.png';
 import medium from '../images/medium.png';
 import fast from '../images/fast.png';
@@ -251,7 +251,7 @@ function Obiljezja(){
                 <p className='tekst-opis'>U nastavku se nalaze dva glazbena djela koje predstavljaju dvije vrste tempa.<br></br>
                 <i>Pritiskom na gumb</i><button className='pokreni-zvuk' title='Pokreni'><img className='play-btn' src={play}></img></button> <i>započinje reprodukcija audio sadržaja.</i><br></br>
                 Nakon što poslušaš glazbeni primjer pokušaj odgonetnuti koja vrsta tempa karakterizira prvo, a koja drugo glazbeno djelo.<br></br>
-                <i>Pritiskom na gumb</i><button className='btn-odgonetni stil-tekst back-green' title='Odgonetni'>Odgonetni</button> <i>dobivaš prikaz ispravnog odgovora.</i></p>
+                <i>Pritiskom na gumb</i><button className='pokreni-zvuk back-green' title='Odgonetni'><img className='play-btn' src={lupa}></img></button> <i>dobivaš prikaz ispravnog odgovora.</i></p>
 
                 <div className=''>
                     <div className='reprodukcija'>
@@ -259,14 +259,14 @@ function Obiljezja(){
                         <button className='pokreni-zvuk' title='Zaustavi' onClick={handleStopKor}><img className='play-btn' src={pause}></img></button>
                         <p className='stil-tekst'>C. Saint-Saens : Karneval životinja - Kornjača</p>
                         <p className='paraf odgovor-tempo'><text className='stil-tekst'><b className='color-yellow'>{andante}</b></text></p>
-                        <p className='paraf'><button onClick={handleAndante} className='btn-odgonetni stil-tekst back-green' title='Odgonetni'>Odgonetni</button></p>
+                        <p className='paraf'><button className='pokreni-zvuk back-green' title='Odgonetni' onClick={handleAndante}><img className='play-btn' src={lupa}></img></button></p>
                     </div>
                     <div className='reprodukcija'>
                         <button className='pokreni-zvuk' title='Pokreni' onClick={handlePlayCan}><img className='play-btn' src={play}></img></button>
                         <button className='pokreni-zvuk' title='Zaustavi' onClick={handleStopCan}><img className='play-btn' src={pause}></img></button>
                         <p className='stil-tekst'>J. Offenbach : Orfej u podzemlju - Can-can</p>
                         <p className='paraf odgovor-tempo'><text className='stil-tekst'><b className='color-red'>{presto}</b></text></p>
-                        <p className='paraf'><button onClick={handlePresto} className='btn-odgonetni stil-tekst back-green' title='Odgonetni'>Odgonetni</button></p>
+                        <p className='paraf'><button className='pokreni-zvuk back-green' title='Odgonetni' onClick={handlePresto}><img className='play-btn' src={lupa}></img></button></p>
                     </div>
                 </div>
             </div>
@@ -312,7 +312,7 @@ function Obiljezja(){
                 <p className='tekst-opis'>U nastavku se nalazi glazbeno djelo koje predstavlja vrstu dinamike.<br></br>
                 <i>Pritiskom na gumb</i><button className='pokreni-zvuk' title='Pokreni'><img className='play-btn' src={play}></img></button> <i>započinje reprodukcija audio sadržaja.</i><br></br>
                 Nakon što poslušaš glazbeni primjer pokušaj odgonetnuti koja vrsta dinamike karakterizira ovo glazbeno djelo.<br></br>
-                <i>Pritiskom na gumb</i><button className='btn-odgonetni stil-tekst back-green' title='Odgonetni'>Odgonetni</button> <i>dobivaš prikaz ispravnog odgovora.</i></p>
+                <i>Pritiskom na gumb</i><button className='pokreni-zvuk back-green' title='Odgonetni'><img className='play-btn' src={lupa}></img></button> <i>dobivaš prikaz ispravnog odgovora.</i></p>
 
                 <div className=''>
                     <div className='reprodukcija'>
@@ -320,7 +320,7 @@ function Obiljezja(){
                         <button className='pokreni-zvuk' title='Zaustavi' onClick={handleStopDin}><img className='play-btn' src={pause}></img></button>
                         <p className='stil-tekst'>C. Orff : Carmina burana - br.25 O Fortuna</p>
                         <p className='paraf odgovor-tempo' id='din-odg'><text className='stil-tekst'><b className='color-red'>{glasno}</b></text></p>
-                        <p className='paraf'><button onClick={handleGlasno} className='btn-odgonetni stil-tekst back-green' title='Odgonetni'>Odgonetni</button></p>
+                        <p className='paraf'><button className='pokreni-zvuk back-green' title='Odgonetni' onClick={handleGlasno}><img className='play-btn' src={lupa}></img></button></p>
                     </div>
                 </div>
             </div>
@@ -354,7 +354,7 @@ function Obiljezja(){
                     <p>Jesen</p>
                     <p>Zima</p>
                 </div>
-                <button className='pokreni-zvuk btn-odgonetni' title='Zaustavi' onClick={handleStop}>Stop</button>
+                <button className='pokreni-zvuk' title='Zaustavi' onClick={handleStop}><img className='play-btn' src={stop}></img></button>
                 
             </div>
 
@@ -428,7 +428,7 @@ function Obiljezja(){
                     </p>
                     <button onClick={handleHomofoni} className="btn-bubanj back-gray"><img className='' src={homofoni} width='250px'></img></button>
                 </div>
-                <button className='pokreni-zvuk btn-odgonetni' title='Zaustavi' onClick={handleStop}>Stop</button>
+                <button className='pokreni-zvuk' title='Zaustavi' onClick={handleStop}><img className='play-btn' src={stop}></img></button>
             </div>
 
             {/* Izvođači */}

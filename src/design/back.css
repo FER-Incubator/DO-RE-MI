@@ -32,6 +32,10 @@
     font-family: "Comic Sans MS"; 
 }
 
+.color-blue{
+    color: rgb(68, 169, 252);
+}
+
 .color-black{
     color: black;
 }
@@ -56,8 +60,16 @@
     color: rgb(225, 180, 2);
 }
 
-.color-blue{
-    color: rgb(15, 145, 252);
+.color-brown{
+    color: brown;
+}
+
+.color-purple{
+    color: rgb(108, 16, 207);
+}
+
+.color-orange{
+    color: orange;
 }
 
 .kreni-btn{

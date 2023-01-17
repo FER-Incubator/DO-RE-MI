@@ -50,13 +50,6 @@
     align-items: center;
 }
 
-.pozdrav-viri{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    /*margin-top: 20px;*/
-    align-items: center;
-}
 
 .tekst-do-obiljezja{
     box-sizing: border-box;
@@ -66,6 +59,7 @@
     padding-bottom: 0px;
     width: 730px;
     margin: 0px 80px;
+    border-radius: 12px;
 }
 
 .obiljezje-opis{
@@ -87,6 +81,7 @@
     padding: 20px;
     width: 700px;
     margin: 5px 80px;
+    border-radius: 12px;
 }
 
 .btn-bubanj{

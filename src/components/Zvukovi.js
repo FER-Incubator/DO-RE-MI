@@ -88,15 +88,15 @@ function Zvukovi(){
                 <h1 className='stil-tekst'>Zvukovi</h1>
             </div>
             
-            <div className='poruka-lekcija-mi back-yellow pozdrav-zvuk'>
-                <img className='robot-mi' src={MI1}></img>
-                <div className='tekst-mi'>
-                    <text className='back-yellow'><i>Pritiskom na gumb</i><button className='pokreni-zvuk' title='Pokreni'><img className='play-btn' src={play}></img></button> <i>započinje reprodukcija glazbenog sadržaja.</i><br></br><br></br> 
-                    Pokušaj slušajući sadržaj odgonetnuti koja od ponuđenih životinja proizvodi zvuk.<br></br> 
-                    Kada odgonetneš o kojoj je životinji riječ pritisni na sličicu te provjeri je li to uistinu glasanje odabrane životinje. </text>
-                </div>
-            </div> 
-                
+            <div className='div-zvuk back-yellow'>
+            <img className='' src={MI1} width='220px'></img>
+                <p className='poruke-zvuk'>
+                    <h3 className=''><i>Pritiskom na gumb</i><button className='pokreni-zvuk' title='Pokreni'><img className='play-btn' src={play}></img></button> <i>započinje reprodukcija glazbenog sadržaja.</i></h3>
+                    <h4>Pokušaj slušajući sadržaj odgonetnuti koja od ponuđenih životinja proizvodi zvuk.</h4>
+                    <h4>Kada odgonetneš o kojoj je životinji riječ pritisni na sličicu te provjeri je li to uistinu glasanje odabrane životinje.</h4>
+                </p>
+            </div>
+                            
             <div className='reprodukcija back-gray'>
                 <button className='pokreni-zvuk' title='Pokreni' onClick={handleGlasanjeStart}><img className='play-btn' src={play}></img></button>
                 <button className='pokreni-zvuk' title='Zaustavi' onClick={handleGlasanjePause}><img className='play-btn' src={pause}></img></button>
@@ -124,22 +124,27 @@ function Zvukovi(){
                 <h2 className='stil-tekst'>Uvod</h2>
             </div>
 
-            <div className='poruka-lekcija-do back-darkblue pozdrav-zvuk'>
-                <img className='robot-do' src={DO}></img>
-                <div className='tekst-do'>
-                <text className=''>Kao što smo čuli u prethodnom primjeru, <b className='color-green'>životinje se glasaju</b>.<br></br>
-                        Svaka životinja se glasa na svoj način.<br></br>Tako se ističe od drugih vrsta životinja.<br></br>Životinje dok se glasaju <b className='color-yellow'>stvaraju razne zvukove</b>.</text>
-                </div>
+            <div className='div-zvuk back-darkblue'>
+            <img className='' src={DO} width='250px'></img>
+                <p className='poruke-zvuk tekst-zvuk'>
+                    <h4 className='color-darkblue'>Kao što smo čuli u prethodnom primjeru, <b className='color-green'>životinje se glasaju</b>.</h4>
+                    <h4>Svaka životinja se glasa na svoj način.</h4>
+                    <h4>Tako se ističe od drugih vrsta životinja.</h4>
+                    <h3>Životinje dok se glasaju <b className='color-yellow'>stvaraju razne zvukove</b>.</h3>
+                </p>
             </div>
 
-            <div className='poruka-lekcija-mi back-yellow pozdrav-zvuk'>
-                <img className='robot-mi' src={MI2}></img>
-                <div className='tekst-mi'>
-                    <text className='back-yellow'>Ljudi također stavraju različite zvukove.<br></br>
-                    Stvaramo ih govorom, pjevanje, tijelom te pomoću raznih instrumenata.<br></br><br></br>
-                    <i>Pritisni na pojedinu sličicu i poslušaj primjere.</i></text>
-                </div>
-            </div>  
+            
+            <div className='div-zvuk back-yellow'>
+            
+                <p className='poruke-zvuk'>
+                    <h3 className=''>Ljudi također stavraju različite zvukove.</h3>
+                    <h4>Stvaramo ih govorom, pjevanje, tijelom te pomoću raznih instrumenata.</h4>
+                    <h4><i>Pritisni na pojedinu sličicu i poslušaj primjere.</i></h4>
+                </p>
+                <img className='' src={MI2} width='220px'></img>
+            </div>
+
 
             <div className='animals back-green'>
                 <div className='ljudi-zvukovi'>
@@ -152,14 +157,18 @@ function Zvukovi(){
                 </div> 
             </div>   
 
-            <div className='poruka-lekcija-do back-darkblue pozdrav-zvuk'>
-                <img className='robot-do' src={DO}></img>
-                <div className='tekst-do'>
-                <text className=''>Dok govoriš, stvaraš gomile zvukova sa određenim značenjem.<br></br> To značenje smo odredili mi, ljudi.<br></br> 
-                Pomoću govora izmjenjujemo misli i ideje.<br></br> <b className='color-red'>Glazba</b> je <b className='color-green'>umjetnost</b> kojom također prenosimo misli i ideje, ali i više od toga.<br></br> Glazbom možemo prenositi svoje <b className='color-yellow'>osjećaje</b> (jesmo li sretni ili tužni, ljuti ili smireni). <br></br>
-                Za stavranje glazbe su potrebni ljudi.<br></br> <b className='color-blue'>Pišemo pjesme, pjevamo, sviramo i plešemo</b>.</text>
-                </div>
-            </div>        
+            <div className='div-zvuk back-darkblue'>
+                <p className='poruke-zvuk tekst-zvuk'>
+                    <h4 >Dok govoriš, stvaraš gomile zvukova sa određenim značenjem.</h4>
+                    <h4>To značenje smo odredili mi, ljudi.</h4>
+                    <h4>Pomoću govora izmjenjujemo misli i ideje.</h4>
+                    <h3 className='tekst-align'><b className='color-red'>Glazba</b> je <b className='color-green'>umjetnost</b> <br></br>kojom prenosimo misli i ideje, ali i više od toga.</h3>
+                    <h4>Glazbom možemo prenositi svoje <b className='color-yellow'>osjećaje</b> (jesmo li sretni ili tužni, ljuti ili smireni).</h4>
+                    <h4>Za stavranje glazbe su potrebni ljudi.</h4>
+                    <h4><b className='color-blue'>Pišemo pjesme, pjevamo, sviramo i plešemo</b>.</h4>
+                </p>
+                <img className='' src={DO} width='250px'></img>
+            </div>       
             
             <div className='bottomNav back-gray'>
             <a onClick={scrollToTop}><Link to='/ucionica' ><button className='kreni-btn next-btn back-btn'>&#171; Povratak: Učionica</button></Link></a>
