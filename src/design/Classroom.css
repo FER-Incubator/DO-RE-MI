@@ -29,6 +29,13 @@
    justify-content: center;
 }
 
+.navigacija2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+ }
+ 
+
 .btn{
     padding:70px 70px;
     margin:10px 5px;

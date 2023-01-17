@@ -18,6 +18,11 @@ function Memory(){
 
     return(
         <div className="glavnidiv">
+             <h3 className='stil-tekst'>Upute</h3>
+            <p className="stil-tekst uputstva-memory"><i>Pritiskom na bijeli kvadrat otvara se sličica.</i><br></br>
+                <i>Tvoj zadatak je otvoriti dvije sličice i pokušati naći dvije jednake sličice odnosno par.</i><br></br>
+                <i>Igra završava kada povežeš sve parove sličica.</i>
+                </p>
             <div className="naslovnidiv">
                 <h1>Glazbeni Memory</h1>
             </div>
@@ -27,6 +32,8 @@ function Memory(){
             <div className="ponovo_btn_div">
                 <button className="ponovo_btn" onClick={refreshPage}>Igraj ponovo</button>
             </div>
+
+           
 
             <a onClick={scrollToTop}><Link to='/igraonica' ><button className='kreni-btn next-btn'>&#171; Povratak: Igraonica</button></Link></a>
 

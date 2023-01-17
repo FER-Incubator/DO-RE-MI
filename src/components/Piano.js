@@ -1,12 +1,12 @@
 import React from "react";
 import { Key } from './Key.js';
-
+import {Link} from "react-router-dom";
 
 
 
 
 import '../design/Piano.css'
-
+import keyboard from '../images/keyboard.png';
 import _ from 'lodash';
 import {KEY_TO_NOTE, NOTES} from "../global/constants.js";
 import { VALID_KEYS } from "../global/constants.js";
@@ -79,15 +79,28 @@ class Piano extends React.Component {
             );
         }); */
 
+        const scrollToTop = () => {
+            window.scrollTo(0, 0)
+        }
+        
         return(
-            <div className="glavnidiv_klav">
+            <div className="glavnidiv_klav stil-tekst">
+                <h3 className='stil-tekst'>Upute</h3>
+                <p className="uputstva"><i>Pritiskom tipki na tipkovnici reproducira se zvuk klavijature.</i><br></br>
+                    <i>Potrebne su ti sljedeće tipke na tipkovnici:</i><br></br>
+                    <img src={keyboard} width="300px"></img>
+                </p>
                 <div className="naslovnidiv_klav">
                     <h1>Klavijatura</h1>
                 </div>
+                
                 <div className="piano">
                     {keys}
                 </div>
-
+                <div className="povratak-div">
+                    <a onClick={scrollToTop}><Link to='/igraonica' ><button className='kreni-btn next-btn'>&#171; Povratak: Igraonica</button></Link></a>
+                </div>
+                
             </div>
         );
     }

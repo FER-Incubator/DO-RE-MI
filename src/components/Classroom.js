@@ -33,9 +33,10 @@ function Classroom(){
                     <a onClick={scrollToTop}><Link to='/ucionica/lekcija-1-zvukovi'><button className='btn prvi broj-pozadina'>Zvukovi</button></Link></a>
                     <a onClick={scrollToTop}><Link to='/ucionica/lekcija-2-obiljezja'><button className='btn drugi broj-pozadina'>Obilježja</button></Link></a>
                     <a onClick={scrollToTop}><Link to='/ucionica/lekcija-3-izvodaci'><button className='btn treci broj-pozadina'>Izvođači</button></Link></a>
+                </div>
+                <div className='navigacija2'>
                     <a onClick={scrollToTop}><Link to='/ucionica/lekcija-4-note'><button className='btn cetvrti broj-pozadina'>Note</button></Link></a>
                     <a onClick={scrollToTop}><Link to='/ucionica/lekcija-5-pjesme'><button className='btn peti broj-pozadina'>Pjesme</button></Link></a>
-                    <a onClick={scrollToTop}><Link to='/ucionica/lekcija-6-povijest'><button className='btn sesti broj-pozadina'>Povijest</button></Link></a>
                 </div>
             </div>
             <div className='back-red dno'>

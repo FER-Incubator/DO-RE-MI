@@ -8,7 +8,6 @@ import Obiljezja from './components/Obiljezja';
 import Izvodaci from './components/Izvodaci';
 import Note from './components/Note';
 import Pjesme from './components/Pjesme';
-import Povijest from './components/Povijest';
 import Quiz from './components/Quiz';
 import Fun from './components/Fun';
 import Header from './components/Header';
@@ -32,7 +31,6 @@ function App(){
           <Route path='/ucionica/lekcija-3-izvodaci' element={<Izvodaci/>}/>
           <Route path='/ucionica/lekcija-4-note' element={<Note/>}/>
           <Route path='/ucionica/lekcija-5-pjesme' element={<Pjesme/>}/>
-          <Route path='/ucionica/lekcija-6-povijest' element={<Povijest/>}/>
           <Route path='/kviz' element={
             <QuizProvider>
               <Quiz />

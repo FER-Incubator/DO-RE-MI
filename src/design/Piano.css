@@ -5,7 +5,6 @@
 
 .glavnidiv_klav{
     background-color: #739cd1;
-    padding-top: 50px;
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -15,5 +14,14 @@
 
 .naslovnidiv_klav{
     font-family: Comic Sans MS;
+    padding-bottom: 50px;
+}
+
+.povratak-div{
+    padding-top: 80px ;
+}
+
+.uputstva{
+    text-align: center;
     padding-bottom: 50px;
 }

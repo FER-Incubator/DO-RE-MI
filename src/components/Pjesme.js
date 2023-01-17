@@ -13,7 +13,7 @@ function Pjesme(){
             <div className='bottomNav back-gray'>
             <a onClick={scrollToTop}><Link to='/ucionica/lekcija-4-note' ><button className='kreni-btn next-btn'>&#171; Lekcija 4: Note</button></Link></a>
             <button className='stil-tekst lekcija-btn'>Lekcija 5: Pjesme</button>
-            <a onClick={scrollToTop}><Link to='/ucionica/lekcija-6-povijest' ><button className='kreni-btn next-btn'>Lekcija 6: Povijest &#187;</button></Link></a>
+            <a onClick={scrollToTop}><Link to='/kviz' ><button className='kreni-btn next-btn end-btn'>Kraj: Kviz &#187;</button></Link></a>
             </div>
         </div>
     )
