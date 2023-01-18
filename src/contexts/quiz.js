@@ -10,8 +10,13 @@ const initialState = {
     showResults: false,
     correctAnswerCount: 0,
     answers: shuffleAnswers(questions[0]),
-    currentAnswer: ''
+    currentAnswer: '',
+    brojPitanja: 0
 };
+
+function refreshPage(){
+    window.location.reload(false);
+}
 
 const reducer = (state, action) => {
     console.log("reducer", state, action);
@@ -37,16 +42,19 @@ const reducer = (state, action) => {
             const answers = showResults
                 ? []
                 : shuffleAnswers(state.questions[currentQuestionIndex]);
+            const brojPitanja = state.brojPitanja + 1;
             return {
                 ...state,
                 currentQuestionIndex,
                 showResults,
                 answers,
                 currentAnswer: "",
+                brojPitanja,
             };
         }
         case "RESTART": {
-            return initialState
+            refreshPage();
+            /* return initialState */
         }
         default:
             return state;
