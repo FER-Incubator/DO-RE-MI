@@ -54,7 +54,7 @@ function Note(){
                 <p>
                     <h3>Note označavaju ideju zapisa glazbe na papir, rabi se notno crtovlje s 5 crta</h3>
                     <h3>gdje pozicija note u odnosu na crtovlje označava njenu visinu,a grafički izgled trajanje, </h3>
-                    <h3>također označavaju i notni zapis nekog određenog glazbenog djela</h3>
+                    <h3>također označavaju i notni zapis nekog određenog glazbenog djela.</h3>
                 </p>
                 <img className='' src={DO} width='250px'></img>
             </div>
@@ -65,7 +65,7 @@ function Note(){
                     <h3>Svaka nota ima svoje ime koje označava njenu visinu, note po redu zovemo</h3>
                     <h3>prima, sekunda, terca, kvarta, kvinta, seksta i septima,</h3>
                     <h3>te iste note poznate su i po imenima</h3>
-                    <h3><b className='color-blue'>DO</b>, <b className='color-pink'>RE</b>, <b className='color-yellow'>MI</b>, <b className='color-green'>FA</b>, <b className='color-orange'>SOL</b>, <b className='color-brown'>LA</b> i <b className='color-purple'>TI</b></h3>
+                    <h3><b className='color-blue'>DO</b>, <b className='color-pink'>RE</b>, <b className='color-yellow'>MI</b>, <b className='color-green'>FA</b>, <b className='color-orange'>SOL</b>, <b className='color-brown'>LA</b> i <b className='color-purple'>TI</b>.</h3>
                 </p>
             </div>
 
@@ -73,7 +73,7 @@ function Note(){
                 <p></p>
                 <p>
                     <h3>Ispod prvo možemo poslušati i vidjeti prikaz nota od najniže do najviše,</h3>
-                    <h3>pa onda i u drugome smjeru od najviše do najniže</h3>
+                    <h3>pa onda i u drugome smjeru od najviše do najniže.</h3>
                 </p>
                 <img className='' src={dur_sl} width='800px'></img>
                 <p>
@@ -91,7 +91,7 @@ function Note(){
                     <h3>Note isto razlikujemo po njihovom izgledu i svaka ima svoje ime</h3>
                     <h3>ovisno o izgledu, tu su cijela nota, polovinka, četvrtinka,</h3>
                     <h3>osminka i šesnaestinka... Svaka nota ima svoje trajanje,</h3>
-                    <h3>a kako zvuči možeš provjeriti klikom na sliku uz notu</h3>
+                    <h3>a kako zvuči možeš provjeriti klikom na sliku uz notu.</h3>
                 </p>
                 <img className='' src={MI} width='250px'></img>
             </div>

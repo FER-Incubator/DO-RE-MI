@@ -395,7 +395,7 @@ function Obiljezja(){
                     </p>
                 </div>
 
-                <p><i>Pritiskom na sličicu započinje reprodukcija audio sadržaja koja karakterizira navedenu vrsu sloga.</i><br></br>
+                <p><i>Pritiskom na sličicu započinje reprodukcija audio sadržaja koja karakterizira navedenu vrstu sloga.</i><br></br>
                     <i>Glazbena djela su: G.F.Handel-Mesija,br.42-Zbor Halelujah i grupa Pentatonix-The sound of silence.</i></p>
                 <div className='div-river'>
                     <p className='tekst-opis'>

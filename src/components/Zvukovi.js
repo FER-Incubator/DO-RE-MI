@@ -159,13 +159,13 @@ function Zvukovi(){
 
             <div className='div-zvuk back-darkblue'>
                 <p className='poruke-zvuk tekst-zvuk'>
-                    <h4 >Dok govoriš, stvaraš gomile zvukova sa određenim značenjem.</h4>
-                    <h4>To značenje smo odredili mi, ljudi.</h4>
-                    <h4>Pomoću govora izmjenjujemo misli i ideje.</h4>
-                    <h3 className='tekst-align'><b className='color-red'>Glazba</b> je <b className='color-green'>umjetnost</b> <br></br>kojom prenosimo misli i ideje, ali i više od toga.</h3>
-                    <h4>Glazbom možemo prenositi svoje <b className='color-yellow'>osjećaje</b> (jesmo li sretni ili tužni, ljuti ili smireni).</h4>
-                    <h4>Za stavranje glazbe su potrebni ljudi.</h4>
-                    <h4><b className='color-blue'>Pišemo pjesme, pjevamo, sviramo i plešemo</b>.</h4>
+                    <h4 className='tekst-align'>Dok govoriš, stvaraš gomile zvukova sa određenim značenjem.<br></br>
+                    To značenje smo odredili mi, ljudi.<br></br>
+                    Pomoću govora izmjenjujemo misli i ideje.</h4>
+                    <h4 className='tekst-align'><b className='color-red'>Glazba</b> je <b className='color-green'>umjetnost kojom prenosimo misli i ideje</b>, ali i više od toga.<br></br>
+                    Glazbom možemo prenositi svoje <b className='color-yellow'>osjećaje</b> (jesmo li sretni ili tužni, ljuti ili smireni).</h4>
+                    <h4 className='tekst-align'>Za stavranje glazbe su potrebni ljudi.<br></br>
+                    <b className='color-blue'>Pišemo pjesme, pjevamo, sviramo i plešemo</b>.</h4>
                 </p>
                 <img className='' src={DO} width='250px'></img>
             </div>       
